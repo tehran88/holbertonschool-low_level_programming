@@ -9,6 +9,6 @@
  */
 int mul(int a, int b)
 {
-    return a * b;  /* Hasilin hesablanmasi Ä*/±
+    return a * b;  /* Hasilin hesablanmasÄ± */
 }
 
