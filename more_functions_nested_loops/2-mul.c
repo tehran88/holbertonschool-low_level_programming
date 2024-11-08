@@ -9,5 +9,5 @@
  */
 int mul(int a, int b)
 {
-	return a * b;  /* Hasilin hesablanması */
+	return (a * b);  /* Hasilin hesablanması */
 }
