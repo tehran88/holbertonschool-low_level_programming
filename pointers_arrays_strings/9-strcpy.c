@@ -3,21 +3,22 @@
 
 int main(void)
 {
-    char src[] = "Z";  // İstədiyiniz hər hansı bir string
-    char dest[2];  // Yalnız bir `Z` üçün yer
+    char src[] = "Z";  /* İstədiyiniz hər hansı bir string */
+    char dest[2];  /* Yalnız bir `Z` üçün yer */
 
-    // `strcpy` ilə kopyalayırıq
+    /* `strcpy` ilə kopyalayırıq */
     strcpy(dest, src);
 
-    // Nəticəni çap edirik
-    printf("%s\n", dest);  // Burada yalnız "Z" çap olmalıdır
+    /* Nəticəni çap edirik */
+    printf("%s\n", dest);  /* Burada yalnız "Z" çap olmalıdır */
 
-    // Eyni şeyi bir neçə dəfə təkrarlayırıq
+    /* Eyni şeyi bir neçə dəfə təkrarlayırıq */
     strcpy(dest, src);
-    printf("%s\n", dest);  // Yalnız "Z" çap olmalıdır
+    printf("%s\n", dest);  /* Yalnız "Z" çap olmalıdır */
 
     strcpy(dest, src);
-    printf("%s\n", dest);  // Yalnız "Z" çap olmalıdır
+    printf("%s\n", dest);  /* Yalnız "Z" çap olmalıdır */
 
     return 0;
 }
+
