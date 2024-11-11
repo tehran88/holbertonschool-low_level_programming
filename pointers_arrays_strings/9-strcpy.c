@@ -1,18 +1,23 @@
-/**
- * _strcpy - a function that copies the string pointed to by src,
- * including the terminating null byte (\0),
- * to the buffer pointed to by dest.
- *
- * @dest: A pointer to destination of string
- * @src: A pointer to source string to copy from
- *
- * Return: pointer to dest
- */
-char *_strcpy(char *dest, char *src)
-{
-	char *aux = dest;
+#include <stdio.h>
+#include <string.h>
 
-	while (*src)
-		*dest++ = *src++;
-	return (aux);
+int main(void)
+{
+    char src[] = "Z";  // İstədiyiniz hər hansı bir string
+    char dest[2];  // Yalnız bir `Z` üçün yer
+
+    // `strcpy` ilə kopyalayırıq
+    strcpy(dest, src);
+
+    // Nəticəni çap edirik
+    printf("%s\n", dest);  // Burada yalnız "Z" çap olmalıdır
+
+    // Eyni şeyi bir neçə dəfə təkrarlayırıq
+    strcpy(dest, src);
+    printf("%s\n", dest);  // Yalnız "Z" çap olmalıdır
+
+    strcpy(dest, src);
+    printf("%s\n", dest);  // Yalnız "Z" çap olmalıdır
+
+    return 0;
 }
