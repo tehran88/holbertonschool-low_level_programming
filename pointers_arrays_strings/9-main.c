@@ -1,18 +1,15 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+/* `strcpy` funksiyasının təyini (əgər lazım olsa) */
+char *_strcpy(char *dest, const char *src)
 {
-    char s1[98];
-    char *ptr;
-
-    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
-    printf("%s", s1);
-    printf("%s", ptr);
-    return (0);
+    while (*src)
+    {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    *dest = '\0';  /* null-terminator əlavə edirik */
+    return dest;
 }
