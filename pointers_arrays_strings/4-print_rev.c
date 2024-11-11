@@ -14,7 +14,7 @@ while (s[count] != '\0')
 }
 for (i = count - 1; i >= 0; i--)
 {
-	write(1 ,&s[i], 1);
+	write(1, &s[i], 1);
 }
 write(1, "\n", 1);
 }
