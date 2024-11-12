@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
- * set_string - sets value of a pointer to a char
- * @s: double pointer to a string
- * @to: pointer to the string to set s to
- * Return: Description of the returned value
+ * _strcpy - a function that copies the string pointed to by src,
+ * including the terminating null byte (\0),
+ * to the buffer pointed to by dest.
+ *
+ * @dest: A pointer to destination of string
+ * @src: A pointer to source string to copy from
+ *
+ * Return: pointer to dest
  */
-void set_string(char **s, char *to)
+char *_strcpy(char *dest, char *src)
 {
-	*s = to;
+	char *aux = dest;
+
+	while (*src)
+		*dest++ = *src++;
+	return (aux);
 }
