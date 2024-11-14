@@ -11,6 +11,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *start_haystack;
 	char *start_needle;
+	/* If the needle is an empty string, return haystack*/
 	if (*needle == '\0')
 {
 	return (haystack);
