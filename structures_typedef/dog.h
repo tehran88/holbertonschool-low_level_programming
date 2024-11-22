@@ -1,17 +1,22 @@
-#include <stdio.h>
-#include "dog.h"
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * main - check the code for Holberton School students.
- * Return: Always 0.
+ * struct dog - structure for a basic dog
+ * @name: Dog's name
+ * @age: Dog's age
+ * @owner: Dog's owner
+ * Description: data structure for dog
  */
-int main(void)
+struct dog
 {
-	struct dog my_dog;
-
-	my_dog.name = "Candy";
-	my_dog.age = 4.8;
-	my_dog.owner = "Meco";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-	return (0);
-}
+	char *name;
+	float age;
+	char *owner;
+};
+typedef struct dog dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif
