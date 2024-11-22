@@ -6,7 +6,7 @@
  * @array: A pointer to the 2D array.
  * @height: The number of rows in the grid.
  */
-void free_grid(int **array, int height)
+/*void free_grid(int **array, int height)
 {
 	int i;
 
@@ -16,7 +16,7 @@ void free_grid(int **array, int height)
 	}
 	free(array);
 }
-
+*/
 /**
  * alloc_grid - A function that returns a pointer to a
  * 2 dimensional array of integers.
