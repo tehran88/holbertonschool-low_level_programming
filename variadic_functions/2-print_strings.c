@@ -10,11 +10,11 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list arr;
+	va_list ptr;
 	unsigned int i;
-	char *temp;
+	char *s;
 
-	va_start(arr, n);
+	va_start(ptr, n);
 
 	for (i = 0 ; i < n ; i++)
 	{
@@ -25,6 +25,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
-	va_end(arr);
+	va_end(ptr);
 }
 
